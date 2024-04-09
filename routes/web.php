@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('frontoffice.layouts.master');
+    return view('frontoffice.welcome');
+});
+Route::get('/admin', function () {
+    return view('backoffice.welcome');
 });
